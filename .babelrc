@@ -3,7 +3,7 @@
         [
             "@babel/preset-env",
             {
-                "debug": false,
+                "debug": true,
                 "modules": false,
                 "targets": {
                     "browsers": [

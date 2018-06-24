@@ -8,18 +8,20 @@ import {
     separator
 } from './filters.js';
 
-const installer = Vue => {
-    Vue.filter('abbreviate', abbreviate);
-    Vue.filter('bytes', bytes);
-    Vue.filter('exponential', exponential);
-    Vue.filter('numeral', exposedNumeral);
-    Vue.filter('ordinal', ordinal);
-    Vue.filter('percentage', percentage);
-    Vue.filter('separator', separator);
-};
+const vueNumeralFilterInstaller = {
+    install (vue) {
+        vue.filter('abbreviate', abbreviate);
+        vue.filter('bytes', bytes);
+        vue.filter('exponential', exponential);
+        vue.filter('numeral', exposedNumeral);
+        vue.filter('ordinal', ordinal);
+        vue.filter('percentage', percentage);
+        vue.filter('separator', separator);
+    }
+}
 
-export default installer;
+export default vueNumeralFilterInstaller;
 
 if (typeof window !== 'undefined' && window.Vue) {
-    Vue.use(installer);
+    Vue.use(vueNumeralFilterInstaller);
 }

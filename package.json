@@ -1,0 +1,41 @@
+{
+  "name": "vue-numeral-filter",
+  "version": "1.0.0",
+  "description": "Vue.js filter for Numeral.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "bili --format es,umd --no-inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lloydjatkinson/vue-numeral-filter.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "numeral",
+    "numeraljs",
+    "filter",
+    "formatting",
+    "display",
+    "number",
+    "ordinal",
+    "percentage"
+  ],
+  "author": "Lloyd J. Atkinson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lloydjatkinson/vue-numeral-filter/issues"
+  },
+  "homepage": "https://github.com/lloydjatkinson/vue-numeral-filter#readme",
+  "dependencies": {
+    "numeral": "^2.0.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel": "^6.23.0",
+    "bili": "^3.1.2"
+  }
+}

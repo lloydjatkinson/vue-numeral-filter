@@ -10,8 +10,15 @@ Allows for [Numeral.js](http://numeraljs.com/) to be used inline in the template
 ```
 npm install vue-numeral-filter
 ```
+```js
+import vueNumeralFilterInstaller from 'vue-numeral-filter';
+
+Vue.use(vueNumeralFilterInstaller);
+```
+
 
 ### CDN - Browser UMD Module
+The UMD bundle will automatically install the filters.
 ```html
 <script src="https://unpkg.com/vue-numeral-filter/dist/vue-numeral-filter.min.js"></script>
 ```
@@ -23,7 +30,7 @@ The `numeral` filter accepts any of the formats specified in the [Numeral.js](ht
 ```
 
 ###  Predefined Filters
-A number of predefined filters are also provided for ease-of-use and readability.
+A number of commonly used predefined filters are also provided for ease-of-use and readability.
 
 | Type                | Numeral                                   | Alias                            | Result      |
 |---------------------|-------------------------------------------|----------------------------------|-------------|

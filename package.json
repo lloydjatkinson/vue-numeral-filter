@@ -2,7 +2,7 @@
   "name": "vue-numeral-filter",
   "version": "1.0.0",
   "description": "Vue.js filter for Numeral.js",
-  "main": "index.js",
+  "main": "dist/vue-numeral-filter.es.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "bili --format es,umd-min --no-inline",

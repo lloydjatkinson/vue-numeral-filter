@@ -17,7 +17,7 @@ npm install vue-numeral-filter
 ```
 
 ### Usage
-The `numeral` filter accepts any of the format specified in the [Numeral.js](http://numeraljs.com/) documentation. For example:
+The `numeral` filter accepts any of the formats specified in the [Numeral.js](http://numeraljs.com/) documentation. For example:
 ```html
 {{ 561739482 | numeral('0,0') }} // => 561,739,482
 ```
@@ -32,4 +32,4 @@ A number of predefined filters are also provided for ease-of-use and readability
 | Thousands Separator | <code>{{ 561739482 &#124; numeral('0,0') }}</code>          | <code>{{ 561739482 &#124; separator }}</code>      | 561,739,482 |
 | Ordinal             | <code>{{ 20 &#124; numeral('Oo') }}</code>                  | <code>{{ 20 &#124; ordinal }}</code>               | 20th        |
 | Abbreviate          | <code>{{ 1000000 &#124; numeral('0.0a') }}</code>           | <code>{{ 1000000 &#124; abbreviate }}</code>       | 1.0m        |
-| Exponential         | <code>{{ 12398734.202 &#124; numeral('0.[00]e+0') }}</code> | <code>{{ 12398734.202 &#124; exponential }}</code> | 1.24e+7     |
+| Exponential         | <code>{{ 123987.202 &#124; numeral('0.[00]e+0') }}</code> | <code>{{ 123987.202 &#124; exponential }}</code> | 1.24e+5     |

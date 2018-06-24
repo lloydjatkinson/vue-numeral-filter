@@ -1,4 +1,9 @@
 # vue-numeral-filter
+
+[![npm version](https://badge.fury.io/js/vue-numeral-filter.svg)](https://badge.fury.io/js/vue-numeral-filter)
+![license](https://img.shields.io/github/license/mashape/apistatus.svg)
+
+
 Vue.js filter for Numeral.js
 
 Allows for [Numeral.js](http://numeraljs.com/) to be used inline in the template section of a component. This can be a convenient way of rendering numerically formatted data in situations where you do not wish to create a computed property.

@@ -8,6 +8,9 @@
     "build": "bili --format es,umd-min --no-inline",
     "test": "jest"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lloydjatkinson/vue-numeral-filter.git"

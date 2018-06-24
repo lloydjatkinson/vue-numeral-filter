@@ -18,7 +18,7 @@ const vueNumeralFilterInstaller = {
         vue.filter('percentage', percentage);
         vue.filter('separator', separator);
     }
-}
+};
 
 export default vueNumeralFilterInstaller;
 

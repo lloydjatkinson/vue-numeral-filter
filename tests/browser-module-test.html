@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="../dist/vue-numeral-filter.js"></script>
+</head>
+<body>
+    <div id="app">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Numeral</th>
+                    <th>Alias</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bytes</td>
+                    <td v-pre><pre>{{ 10485760 | numeral('0b') }}</pre></td>
+                    <td v-pre><pre>{{ 10485760 | bytes }}</pre></td>
+                    <td>{{ 10485760 | bytes }}</td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td v-pre><pre>{{ 0.5567 | numeral('0.[00]%') }}</pre></td>
+                    <td v-pre><pre>{{ 0.5567 | percentage }}</pre></td>
+                    <td>{{ 0.5567 | percentage }}</td>
+                </tr>
+                <tr>
+                    <td>Thousands Separator</td>
+                    <td v-pre><pre>{{ 561739482 | numeral('0,0') }}</pre></td>
+                    <td v-pre><pre>{{ 561739482 | separator }}</pre></td>
+                    <td>{{ 561739482 | separator }}</td>
+                </tr>
+                <tr>
+                    <td>Ordinal</td>
+                    <td v-pre><pre>{{ 20 | numeral('Oo') }}</pre></td>
+                    <td v-pre><pre>{{ 20 | ordinal }}</pre></td>
+                    <td>{{ 20 | ordinal }}</td>
+                </tr>
+                <tr>
+                    <td>Abbreviate</td>
+                    <td v-pre><pre>{{ 1000000 | numeral('0.0a') }}</pre></td>
+                    <td v-pre><pre>{{ 1000000 | abbreviate }}</pre></td>
+                    <td>{{ 1000000 | abbreviate }}</td>
+                </tr>
+                <tr>
+                    <td>Exponential</td>
+                    <td v-pre><pre>{{ 12398734.202 | numeral('0.[00]e+0') }}</pre></td>
+                    <td v-pre><pre>{{ 12398734.202 | exponential }}</pre></td>
+                    <td>{{ 12398734.202 | exponential }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        new Vue({
+	        el: "#app"
+        });
+    </script>
+</body>
+</html>

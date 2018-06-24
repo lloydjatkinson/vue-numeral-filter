@@ -4,7 +4,7 @@ const abbreviate = value => numeral(value).format('0.0a');
 
 const bytes = value => numeral(value).format('0 b')
 
-const exposedNumeral = (value, format) => numeral(value, format);
+const exposedNumeral = (value, format) => numeral(value).format(format);
 
 const exponential = value => numeral(value).format('0.[00]e+0');
 

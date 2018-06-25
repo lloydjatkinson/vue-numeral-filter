@@ -1,7 +1,7 @@
 # vue-numeral-filter
 
 [![npm version](https://badge.fury.io/js/vue-numeral-filter.svg)](https://badge.fury.io/js/vue-numeral-filter)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 
 Vue.js filter for Numeral.js

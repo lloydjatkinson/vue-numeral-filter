@@ -28,7 +28,7 @@ Vue.use(vueNumeralFilterInstaller);
 ### CDN - Browser UMD Module
 The UMD bundle will automatically install the filters.
 ```html
-<script src="https://unpkg.com/vue-numeral-filter/dist/vue-numeral-filter.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-numeral-filter/dist/vue-numeral-filter.min.js"></script>
 ```
 
 ### Usage

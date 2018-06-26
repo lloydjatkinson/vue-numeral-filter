@@ -14,12 +14,15 @@ const percentage = value => numeral(value).format( '0.[00]%');
 
 const separator = value => numeral(value).format('0,0');
 
+const currency = value => numeral(value).format('$0,0.00');
+
 export {
-    exposedNumeral,
-    bytes,
-    percentage,
-    separator,
-    ordinal,
     abbreviate,
-    exponential
+    bytes,
+    currency,
+    exponential,
+    exposedNumeral,
+    ordinal,
+    percentage,
+    separator
 };

@@ -28,10 +28,19 @@ var separator = function separator(value) {
   return numeral(value).format('0,0');
 };
 
+var currency = function currency(value) {
+  return numeral(value).format('$0,0.00');
+};
+
 var vueNumeralFilterInstaller = {
-  install: function install(vue) {
+  install: function install(vue, options) {
+    if (options) {
+      numeral.locale(options.locale || 'en-gb');
+    }
+
     vue.filter('abbreviate', abbreviate);
     vue.filter('bytes', bytes);
+    vue.filter('currency', currency);
     vue.filter('exponential', exponential);
     vue.filter('numeral', exposedNumeral);
     vue.filter('ordinal', ordinal);

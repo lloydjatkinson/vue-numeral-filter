@@ -26,21 +26,12 @@ var percentage = function percentage(value) {
 
 var separator = function separator(value) {
   return numeral(value).format('0,0');
-};
-
-var currency = function currency(value) {
-  return numeral(value).format('$0,0.00');
-};
+}; // Numeral.js broken and not updated to properly support locales via ES modules.
 
 var vueNumeralFilterInstaller = {
-  install: function install(vue, options) {
-    if (options) {
-      numeral.locale(options.locale || 'en-gb');
-    }
-
+  install: function install(vue) {
     vue.filter('abbreviate', abbreviate);
     vue.filter('bytes', bytes);
-    vue.filter('currency', currency);
     vue.filter('exponential', exponential);
     vue.filter('numeral', exposedNumeral);
     vue.filter('ordinal', ordinal);

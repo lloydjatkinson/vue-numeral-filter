@@ -1,7 +1,6 @@
 import {
     abbreviate,
     bytes,
-    currency,
     exponential,
     exposedNumeral,
     ordinal,
@@ -9,17 +8,10 @@ import {
     separator
 } from './filters.js';
 
-import numeral from 'numeral';
-
 const vueNumeralFilterInstaller = {
-    install (vue, options) {
-        if (options) {
-            numeral.locale(options.locale || 'en-gb');
-        }
-
+    install (vue) {
         vue.filter('abbreviate', abbreviate);
         vue.filter('bytes', bytes);
-        vue.filter('currency', currency);
         vue.filter('exponential', exponential);
         vue.filter('numeral', exposedNumeral);
         vue.filter('ordinal', ordinal);

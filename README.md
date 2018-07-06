@@ -6,6 +6,8 @@
 
 Vue.js filter for Numeral.js
 
+https://github.com/lloydjatkinson/vue-numeral-filter/
+
 Allows for [Numeral.js](http://numeraljs.com/) to be used inline in the template section of a component. This can be a convenient way of rendering numerically formatted data in situations where you do not wish to create a computed property.
 
 ## Demonstration

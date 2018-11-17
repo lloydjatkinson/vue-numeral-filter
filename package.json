@@ -1,6 +1,6 @@
 {
   "name": "vue-numeral-filter",
-  "version": "1.0.12",
+  "version": "1.0.121",
   "description": "Vue.js filter for Numeral.js",
   "main": "dist/vue-numeral-filter.es.js",
   "scripts": {

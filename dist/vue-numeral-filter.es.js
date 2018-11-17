@@ -50,7 +50,6 @@ var vueNumeralFilterInstaller = {
     vue.filter('currency', currency);
   }
 };
-debugger;
 
 if (typeof window !== 'undefined' && window.Vue) {
   Vue.use(vueNumeralFilterInstaller);

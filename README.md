@@ -22,7 +22,7 @@ npm install vue-numeral-filter
 ```js
 import vueNumeralFilterInstaller from 'vue-numeral-filter';
 
-Vue.use(vueNumeralFilterInstaller);
+Vue.use(vueNumeralFilterInstaller, { locale: 'en-gb' });
 ```
 
 
@@ -49,3 +49,4 @@ A number of commonly used predefined filters are also provided for ease-of-use a
 | Ordinal             | <code>{{ 20 &#124; numeral('Oo') }}</code>                  | <code>{{ 20 &#124; ordinal }}</code>               | 20th        |
 | Abbreviate          | <code>{{ 1000000 &#124; numeral('0.0a') }}</code>           | <code>{{ 1000000 &#124; abbreviate }}</code>       | 1.0m        |
 | Exponential         | <code>{{ 123987.202 &#124; numeral('0.[00]e+0') }}</code> | <code>{{ 123987.202 &#124; exponential }}</code> | 1.24e+5     |
+|Currency| <code>{{ 200.42 &#124; numeral('$0,0.00') }}</code>|<code>{{ 200.42 &#124; currency }}</code>|£200.42|

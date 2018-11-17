@@ -9,6 +9,6 @@ describe('Installer', () => {
 
         vueNumeralFilterInstaller.install(mockVue);
 
-        expect(mockFilter.mock.calls.length).toBe(7);
+        expect(mockFilter.mock.calls.length).toBe(8);
     });
 });

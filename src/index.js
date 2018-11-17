@@ -1,3 +1,6 @@
+import numeral from 'numeral';
+import 'numeral/locales';
+
 import {
     abbreviate,
     bytes,
@@ -5,11 +8,14 @@ import {
     exposedNumeral,
     ordinal,
     percentage,
-    separator
+    separator,
+    currency
 } from './filters.js';
 
 const vueNumeralFilterInstaller = {
-    install (vue) {
+    install (vue, { locale = 'en-gb' } = {}) {
+        numeral.locale(locale);
+
         vue.filter('abbreviate', abbreviate);
         vue.filter('bytes', bytes);
         vue.filter('exponential', exponential);
@@ -17,6 +23,7 @@ const vueNumeralFilterInstaller = {
         vue.filter('ordinal', ordinal);
         vue.filter('percentage', percentage);
         vue.filter('separator', separator);
+        vue.filter('currency', currency);
     }
 };
 

@@ -14,8 +14,7 @@ const percentage = value => numeral(value).format( '0.[00]%');
 
 const separator = value => numeral(value).format('0,0');
 
-// Numeral.js broken and not updated to properly support locales via ES modules.
-// const currency = value => numeral(value).format('$0,0.00');
+const currency = value => numeral(value).format('$0,0.00');
 
 export {
     abbreviate,
@@ -24,5 +23,6 @@ export {
     exposedNumeral,
     ordinal,
     percentage,
-    separator
+    separator,
+    currency
 };

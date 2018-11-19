@@ -53,4 +53,4 @@ A number of commonly used predefined filters are also provided for ease-of-use a
 
 ### Locales
 
-See [Numeral.js](http://numeraljs.com/) the list of locales here: https://github.com/adamwdraper/Numeral-js/tree/master/src/locales
+See the list of locales here: https://github.com/adamwdraper/Numeral-js/tree/master/src/locales

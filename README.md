@@ -1,6 +1,7 @@
 # vue-numeral-filter
 
 [![npm version](https://badge.fury.io/js/vue-numeral-filter.svg)](https://badge.fury.io/js/vue-numeral-filter)
+[![](https://data.jsdelivr.com/v1/package/npm/vue-numeral-filter/badge)](https://www.jsdelivr.com/package/npm/vue-numeral-filter)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 

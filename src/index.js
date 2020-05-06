@@ -13,7 +13,7 @@ import {
 } from './filters.js';
 
 const vueNumeralFilterInstaller = {
-    install (vue, { locale = 'en-gb' } = {}) {
+    install(vue, { locale = 'en-gb' } = {}) {
         numeral.locale(locale);
 
         vue.filter('abbreviate', abbreviate);
@@ -31,4 +31,4 @@ export default vueNumeralFilterInstaller;
 
 if (typeof window !== 'undefined' && window.Vue) {
     Vue.use(vueNumeralFilterInstaller);
-}
+};

@@ -56,3 +56,8 @@ A number of commonly used predefined filters are also provided for ease-of-use a
 ### Locales
 
 See the list of locales here: https://github.com/adamwdraper/Numeral-js/tree/master/src/locales
+
+
+### Find this library useful?
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K71ND3U)

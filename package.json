@@ -5,7 +5,7 @@
   "main": "dist/vue-numeral-filter.es.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "bili --format es,umd-min --no-inline",
+    "build": "bili --format esm,umd-min --module-name vue-numeral-filter.min.js",
     "test": "jest"
   },
   "files": [
